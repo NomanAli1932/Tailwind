@@ -11,7 +11,6 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-red-800: oklch(44.4% 0.177 26.899);
-    --color-red-900: oklch(39.6% 0.141 25.723);
     --color-lime-300: oklch(89.7% 0.196 126.665);
     --color-lime-500: oklch(76.8% 0.233 130.85);
     --color-lime-700: oklch(53.2% 0.157 131.589);
@@ -397,29 +396,8 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
-  .h-\[3px\] {
-    height: 3px;
-  }
-  .h-\[30px\] {
-    height: 30px;
-  }
-  .h-\[150px\] {
-    height: 150px;
-  }
-  .h-\[200px\] {
-    height: 200px;
-  }
-  .h-\[220px\] {
-    height: 220px;
-  }
   .h-\[230px\] {
     height: 230px;
-  }
-  .h-\[250px\] {
-    height: 250px;
-  }
-  .h-\[300px\] {
-    height: 300px;
   }
   .h-full {
     height: 100%;
@@ -781,9 +759,6 @@
   .bg-blue-700 {
     background-color: var(--color-blue-700);
   }
-  .bg-blue-900 {
-    background-color: var(--color-blue-900);
-  }
   .bg-cyan-50 {
     background-color: var(--color-cyan-50);
   }
@@ -792,9 +767,6 @@
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
-  }
-  .bg-gray-300 {
-    background-color: var(--color-gray-300);
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
@@ -811,17 +783,11 @@
   .bg-lime-500 {
     background-color: var(--color-lime-500);
   }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
-  }
   .bg-red-700 {
     background-color: var(--color-red-700);
   }
   .bg-red-800 {
     background-color: var(--color-red-800);
-  }
-  .bg-red-900 {
-    background-color: var(--color-red-900);
   }
   .bg-rose-50 {
     background-color: var(--color-rose-50);
@@ -1149,11 +1115,6 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
-  .not-in-range\:rounded-\[10px\] {
-    &:not(*:in-range) {
-      border-radius: 10px;
-    }
-  }
   .placeholder\:text-center {
     &::placeholder {
       text-align: center;
@@ -1339,11 +1300,6 @@
       --tw-ring-inset: inset;
     }
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
   .sm\:h-\[150px\] {
     @media (width >= 40rem) {
       height: 150px;
@@ -1352,11 +1308,6 @@
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
-    }
-  }
-  .sm\:flex-col {
-    @media (width >= 40rem) {
-      flex-direction: column;
     }
   }
   .sm\:flex-row {
@@ -1382,11 +1333,6 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
-    }
-  }
-  .md\:justify-around {
-    @media (width >= 48rem) {
-      justify-content: space-around;
     }
   }
   .md\:space-y-0 {
