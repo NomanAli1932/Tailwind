@@ -396,29 +396,8 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
-  .h-\[3px\] {
-    height: 3px;
-  }
-  .h-\[30px\] {
-    height: 30px;
-  }
-  .h-\[150px\] {
-    height: 150px;
-  }
-  .h-\[200px\] {
-    height: 200px;
-  }
-  .h-\[220px\] {
-    height: 220px;
-  }
   .h-\[230px\] {
     height: 230px;
-  }
-  .h-\[250px\] {
-    height: 250px;
-  }
-  .h-\[300px\] {
-    height: 300px;
   }
   .h-full {
     height: 100%;
@@ -1136,11 +1115,6 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
-  .not-in-range\:rounded-\[10px\] {
-    &:not(*:in-range) {
-      border-radius: 10px;
-    }
-  }
   .placeholder\:text-center {
     &::placeholder {
       text-align: center;
@@ -1326,11 +1300,6 @@
       --tw-ring-inset: inset;
     }
   }
-  .sm\:flex {
-    @media (width >= 40rem) {
-      display: flex;
-    }
-  }
   .sm\:h-\[150px\] {
     @media (width >= 40rem) {
       height: 150px;
@@ -1339,11 +1308,6 @@
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
-    }
-  }
-  .sm\:flex-col {
-    @media (width >= 40rem) {
-      flex-direction: column;
     }
   }
   .sm\:flex-row {
@@ -1369,11 +1333,6 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
-    }
-  }
-  .md\:justify-around {
-    @media (width >= 48rem) {
-      justify-content: space-around;
     }
   }
   .md\:space-y-0 {
