@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css"></link>
+    <title>WebDev Course - Registration</title>
+
+</head>
+<body>
+    <header class=" text-blue-900 w-full sm:w-full  sm:h-[150px] h-[230px] bg-[#62c7f0] flex flex-col sticky top-0 left-0 z-[3] mt-[-8px] mb-[20px] border-none border-black rounded-b-[10px]">
+  <!-- Your content here -->
+
+        <h1 class="flex justify-center font-serif text-[30px]">WebDev Course</h1>
+        <nav>
+            <ul class="flex sm:flex-row flex-col justify-around sm:justify-around list-none">
+                <li class="sm:bg-white  gap-1 rounded-[10px]"><a  class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="index.html">Home</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="registration.html">Registration</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="products.html">Products</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class=" m-[5px] p-[10px] rounded-[10px] border-l-2  border-l-blue-500 shadow-md text-[20px] ">
+        <section>
+            <h2 class="text-blue-800 font-bold">User Registration</h2>
+            <form action="registration-success.html" method="get">
+                <fieldset class= "bg-[#a1bdbe] rounded-[10px] shadow-[1px_1px_5px_black] text-[30px] p-3 w-full">
+                    <legend class="text-green-500">Personal Information</legend>
+                    <p>
+                        <label class="text-red-500" for="first-name">First Name:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="text" id="first-name" name="first-name" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="last-name">Last Name:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="text" id="last-name" name="last-name" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="email">Email:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="phone">Phone:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="tel" id="phone" name="phone">
+                    </p>
+                </fieldset>
+                
+                <fieldset class= "bg-[#a1bdbe] rounded-[10px] shadow-[1px_1px_5px_black] text-[30px] sm:w-full w-full">
+                    <legend class="text-green-500">Account Information</legend>
+                    <p>
+                        <label class="text-red-500" for="username">Username:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="text" id="username" name="username" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="password">Password:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="password" id="password" name="password" required minlength="8">
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="confirm-password">Confirm Password:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="password" id="confirm-password" name="confirm-password" required>
+                    </p>
+                </fieldset>
+                
+                <fieldset class= "bg-[#a1bdbe] rounded-[10px] shadow-[1px_1px_5px_black] text-[30px]">
+                    <legend class="text-green-500">Additional Information</legend>
+                    <p>
+                        <label class="text-red-500" for="birthdate">Birth Date:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="date" id="birthdate" name="birthdate">
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="course-level">Course Level:</label>
+                        <select class="border-none rounded-[7px] sm:bg-white bg-white m-2" id="course-level" name="course-level">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label class="text-red-500">Interests:</label><br>
+                        <input type="checkbox" id="frontend" name="interests" value="frontend">
+                        <label class="text-red-500" for="frontend">Frontend Development</label><br>
+                        
+                        <input type="checkbox" id="backend" name="interests" value="backend">
+                        <label class="text-red-500" for="backend">Backend Development</label><br>
+                        
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="checkbox" id="fullstack" name="interests" value="fullstack">
+                        <label class="text-red-500" for="fullstack">Full Stack Development</label>
+                    </p>
+                    <p>
+                        <label class="text-red-500 "  for="comments">Comments:</label>
+                        <textarea class = "sm:bg-white bg-white m-3" id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <input class=" bg-sky-300 border-none rounded-[5px] text-green-600 text-[20px] ml-[5px] mt-[6px]" type="submit" value="Register">
+                    <input class=" bg-sky-300 border-none rounded-[5px] text-green-600 text-[20px] ml-[5px] mt-[6px] " type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section> 
+    </main>
+
+    <footer class="bg-gray-500 text-[20px]">
+        <p class="text-[20px]">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a class="text-blue-800 pl-3" href="registration.html">Registration</a></li>
+                <li><a class="text-blue-800 pl-3" href="index.html">Home</a></li>
+                <li><a class="text-blue-800 pl-3" href="products.html">Products</a></li>
+                <li><a class="text-blue-800 pl-3" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+</body>
+</html>

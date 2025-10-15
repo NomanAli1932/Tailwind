@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css"></link>
+    <title>WebDev Course - Contact Us</title>
+
+</head>
+<body>
+    <header class=" text-blue-900 w-full sm:h-[150px] h-[230px] bg-[#62c7f0] flex flex-col sticky top-0 left-0 z-[3] mt-[-8px] mb-[20px] border-none border-black rounded-b-[10px]">
+  <!-- Your content here -->
+
+        <h1 class="flex justify-center font-serif text-[30px]">WebDev Course</h1>
+        <nav>
+            <ul class="flex sm:flex-row flex-col justify-around sm:justify-around list-none">
+                <li class="sm:bg-white  gap-1 rounded-[10px]"><a  class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="index.html">Home</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="registration.html">Registration</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="products.html">Products</a></li>
+                <li class="sm:bg-white gap-1 rounded-[10px]"><a class="no-underline text-[30px] hover:text-green-600 hover:bg-[#e27878] hover:rounded-[8px] hover:border hover:border-[#e27878] transition-all duration-500 font-bold" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class=" m-[5px] p-[10px] rounded-[10px] border-l-2  border-l-blue-500 shadow-md text-[20px] ">
+        <section>
+            <h2 class="text-blue-800 font-bold">Contact Us</h2>
+            
+            <article class="bg-[#a1bdbe] rounded-[10px] shadow-md border-b-2 border-b-blue-500 font-[30px] m-3">
+                <h3 class="text-green-600 p-3 font-bold">Get in Touch</h3>
+                <p>We'd love to hear from you. Please use the form below to send us a message.</p>
+                
+                <form action="contact-success.html" method="get">
+                    <p>
+                        <label class="text-red-500" for="contact-name">Your Name:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="text" id="contact-name" name="contact-name" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="contact-email">Your Email:</label>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="email" id="contact-email" name="contact-email" required>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="contact-subject">Subject:</label>
+                        <select class="border-none rounded-[7px] sm:bg-white bg-white m-2" id="contact-subject" name="contact-subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="course">Course Information</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label class="text-red-500" for="contact-message">Message:</label>
+                        <textarea class="border-none rounded-[7px] sm:bg-white bg-white m-2" id="contact-message" name="contact-message" rows="6" cols="50" required></textarea>
+                    </p>
+                    <p>
+                        <label class="text-red-500">Preferred Contact Method:</label><br>
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="radio" id="contact-email-method" name="contact-method" value="email" checked>
+                        <label for="contact-email-method">Email</label>
+                        
+                        <input class="border-none rounded-[7px] sm:bg-white bg-white m-2" type="radio" id="contact-phone-method" name="contact-method" value="phone">
+                        <label class="text-red-500" class="text-red-500" for="contact-phone-method">Phone</label>
+                    </p>
+                    <p>
+                        <input class=" bg-sky-300 border-none rounded-[5px] text-green-600 text-[20px] ml-[5px] mt-[6px]" type="submit" value="Send Message">
+                    </p>
+                </form>
+            </article>
+            
+            <article class="bg-[#a1bdbe] rounded-[10px] shadow-md border-b-2 border-b-blue-500 font-[30px] m-3">
+                <h3 class="text-green-600 p-3 font-bold">Our Location</h3>
+                <address>
+                    WebDev Training Center<br>
+                    123 Learning Street<br>
+                    Tech City, TC 10101<br>
+                    Email: <a class="text-blue-700" href="mailto:info@webdevcourse.com">info@webdevcourse.com</a><br>
+                    Phone: <a  class="text-blue-700" href="tel:+15551234567">(555) 123-4567</a>
+                </address>
+            </article>
+            
+            <article class="bg-[#a1bdbe] rounded-[10px] shadow-md border-b-2 border-b-blue-500 font-[30px] m-3">
+                <h3 class="text-green-600 p-3 font-bold">Office Hours</h3>
+                <table class=" border-2 border-black border-collapse w-[80%] mx-auto mb-[4px]">
+                    <tr>
+                        <td class="border-2 border-black ">Monday - Friday</td>
+                        <td class="border-2 border-black ">9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="border-2 border-black ">Saturday</td>
+                        <td class="border-2 border-black ">10:00 AM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="border-2 border-black ">Sunday</td>
+                        <td class="border-2 border-black ">Closed</td>
+                    </tr>
+                </table>
+            </article>
+            
+            <article class="bg-[#a1bdbe] rounded-[10px] shadow-md border-b-2 border-b-blue-500 font-[30px] m-3">
+                <h3 class="text-green-600 p-3 font-bold">Frequently Asked Questions</h3>
+                <details>
+                    <summary>What prerequisites do I need for the courses?</summary>
+                    <p class="border-none rounded-[10px] m-[5px] shadow-[1px_2px_7px_rgba(0,0,0,0.3)] bg-[#dae9eb] p-[5px] list-inside">Our beginner courses require no prior experience. For intermediate and advanced courses, we recommend basic computer literacy and familiarity with using web browsers.</p>
+                </details>
+                
+                <details>
+                    <summary>How long do I have access to course materials?</summary>
+                    <p class="border-none rounded-[10px] m-[5px] shadow-[1px_2px_7px_rgba(0,0,0,0.3)] bg-[#dae9eb] p-[5px] list-inside">You'll have lifetime access to all course materials once you enroll, including any future updates to the content.</p>
+                </details>
+                
+                <details>
+                    <summary>Do you offer payment plans?</summary>
+                    <p class="border-none rounded-[10px] m-[5px] shadow-[1px_2px_7px_rgba(0,0,0,0.3)] bg-[#dae9eb] p-[5px] list-inside">Yes, we offer flexible payment plans for all our courses. Contact us for more information about available options.</p>
+                </details>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-gray-500 text-[20px]">
+        <p class="text-[20px]">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a class="text-blue-800 pl-3" href="index.html">Home</a></li>
+                <li><a class="text-blue-800 pl-3" href="registration.html">Registration</a></li>
+                <li><a class="text-blue-800 pl-3" href="products.html">Products</a></li>
+                <li><a class="text-blue-800 pl-3" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+</body>
+</html>
